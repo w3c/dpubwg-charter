@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="content-type">
+        <title>Digital Publishing WG Charter</title>
+        <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://www.w3.org/Guide/pubrules-style.css">
+        <link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css">
+        <style type="text/css">
+            body {
+                background-image: url('data:image/svg+xml,\
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 100" width="100%" height="50%" opacity=".05">\
+                        <g transform="translate(73,45) rotate(-35)">\
+                            <rect fill="none" stroke="black" stroke-width="2" width="126" x="-62" y="-10" height="35" rx="10" ry="10"/>\
+                            <text x="0" y="20" font-family="sans-serif" font-size="35" fill="black" text-anchor="middle">DRAFT</text>\
+                        </g>\
+                    </svg>\
+                ');
+                background-position: top center;
+                background-repeat: repeat;
+            }
+            ul#navbar {
+              font-size: small;
+            }
+            dt.spec {
+              font-weight: bold;
+            }
+            dt.spec new {
+              background-color: yellow;
+              background-image: none;
+              background-repeat: repeat;
+              background-attachment: scroll;
+              background-position: 0% 0%;
+            }
+            .issue {
+              background-color: cornsilk;
+              background-image: none;
+              background-repeat: repeat;
+              background-attachment: scroll;
+              background-position: 0% 0%;
+              font-style: italic;
+            }
+            .todo {
+              color: rgb(153, 0, 0);
+              font-style: italic;
+            }
+            footer {
+              font-size: small;
+            }
+            .warning {
+              box-shadow: 10px 5px 3px 0px gray;
+              border-top-width: thin;
+              border-right-width: thin;
+              border-bottom-width: thin;
+              border-left-width: thin;
+              border-top-style: solid;
+              border-right-style: solid;
+              border-bottom-style: solid;
+              border-left-style: solid;
+              border-radius: 3px;
+              width: 80%;
+              padding-top: 0.5em;
+              padding-right: 0.5em;
+              padding-bottom: 0.5em;
+              padding-left: 0.5em;
+            }
+
+            .warning h1 {
+              font-size: 130%;
+              font-style: italic;
+              font-weight: bold;
+              text-align: center;
+
+            }
+
+            .warning p {
+                font-size: 110%;
+            }
+
+            section section {
+                margin-left: 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="header">
+            <aside>
+                <ul id="navbar">
+                    <li><a href="#scope">Scope</a></li>
+                    <li><a href="#deliverables">Deliverables</a></li>
+                    <li><a href="#coordination">Coordination</a></li>
+                    <li><a href="#participation">Participation</a></li>
+                    <li><a href="#communication">Communication</a></li>
+                    <li><a href="#decisions">Decision Policy</a></li>
+                    <li><a href="#patentpolicy">Patent Policy</a></li>
+                    <li><a href="#licensing">Licensing</a></li>
+                    <li><a href="#about">About this Charter</a></li>
+                </ul>
+            </aside>
+            <p>
+                <a href="https://www.w3.org/"><img alt="W3C" src="https://www.w3.org/Icons/w3c_home" height="48" width="72"></a>
+            </p>
+        </header>
+        <main>
+            <!-- <p id="warning">DRAFT</p> -->
+            <div class="warning">
+                <h1>Very Early Draft</h1>
+
+                <p>This very early draft is expected to be an input to the chartering process of a DPUB Working Group, envisioned as part of the combination of IDPF and W3C whose plans have been <a href="https://www.w3.org/2016/05/digpub.html.en">announced in May 2016</a> and which should come to fruition in early 2017. The development of this charter will be driven by the Publishing Business Group, to be set up as the first step of the combination of the two organizations. The early draft charter draws on the work of the <a href="https://www.w3.org/dpub/IG/">Digital Publishing Interest Group</a>, and that group will continue to contribute to the technical aspects of the charter (particularly to sections <a href="#scope">1: “Scope”</a> and <a href="#deliverables">2: “Deliverables”</a>).</p>
+
+                <p>Issues and comments from the public at large, but especially from the representatives of IDPF and W3C members, are encouraged and highly welcome. Comments should be submitted by raising <a href="https://github.com/w3c/dpubwg-charter/issues">issues on this (public) repository</a>. (In the case of a problems, comments can also be sent to the editor of this document, Ivan Herman, <a href="mailto:ivan@w3.org">ivan@w3.org</a>, who will submit the comment to the issue list in the commenter’s name.)</p>
+
+                <p>Explicit todo-s and questions to be answered for the final draft are marked explicitly in the draft <span class="todo">like this</span>.
+            </div>
+
+            <h1 id="title">Digital Publishing Working Group Charter</h1>
+
+            <p class="mission">
+                The <strong>mission</strong> of the <a href="https://www.w3.org/dpub/WG/">Digital Publishing Working Group</a> is to <span class="todo">[do something cool and specific on the Web]</span>.
+            </p>
+
+            <div class="noprint">
+                <p class="join">
+                    <a href="https://www.w3.org/2004/01/pp-impl/#####/join">Join the Digital Publishing Working Group.</a> <span class="todo">[Final URL to be filled in if and when the charter is formally approved.]</span>
+                </p>
+            </div>
+
+            <section id="details">
+                <table class="summary-table">
+                    <tbody>
+                        <tr id="Start">
+                            <th> Start date </th>
+                            <td> <i class="todo">[dd monthname yyyy] (date of the "Call for Participation", when the charter is formally approved)</i> </td>
+                        </tr>
+                        <tr id="End">
+                            <th> End date </th>
+                            <td> <i class="todo">[dd monthname yyyy]</i> </td>
+                        </tr>
+                        <tr>
+                            <th> Chairs </th>
+                            <td> Garth Conboy (Google) and Tzviya Siegman, (John Wiley &amp; Sons., Inc.) </td>
+                        </tr>
+                        <tr>
+                            <th> Team Contacts </th>
+                            <td> <a href="https://www.w3.org/People/Ivan/">Ivan Herman</a> (0.4 <abbr title="Full-Time Equivalent">FTE</abbr>); ????</td>
+                        </tr>
+                        <tr>
+                            <th> Meeting Schedule </th>
+                            <td> <strong>Teleconferences:</strong> 1-hour calls will be held weekly <br>
+                                <strong>Face-to-face:</strong> we will meet during the W3C's annual Technical Plenary week; additional face-to-face meetings may be scheduled by consent of the participants, usually no more than 3 per year.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="scope" class="scope">
+                <h2>Scope</h2>
+                <p><i class="todo">Brief background of landscape, technology, and relationship to the Web, users, developers, implementers, and industry.</i></p>
+
+                <section id="input-documents">
+                    <h3>Input Documents</h3>
+
+                    <p>
+                        The following documents <i>may</i> be considered by the Working Group as direct inputs to the specifications to be developed. <span class="todo">Justification for the input documents is still to be added.</span>
+                    </p>
+
+                    <h5>W3C documents</h5>
+                    <ul>
+                        <li><a href="http://w3c.github.io/dpub-pwp/">Web Publications for the Open Web Platform</a></li>
+                        <li><a href="https://w3c.github.io/dpub-pwp-ucr/">Web Publications Use Case and Requirements</a></li>
+                        <li><a href="https://www.w3.org/TR/appmanifest/">Web App Manifest</a></li>
+                        <li><a href="https://w3c.github.io/ServiceWorker/">Service Workers</a></li>
+                        <li><a href="https://w3ctag.github.io/packaging-on-the-web/">Packaging on the Web</a></li>
+                        <li><a href="https://www.w3.org/TR/wai-aria-1.1/">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a></li>
+                        <li><a href="http://www.w3.org/TR/dpub-aria-1.0/">Digital Publishing WAI-ARIA Module 1.0</a></li>
+                    </ul>
+
+                    <h5>Non-W3C documents</h5>
+                    <ul>
+                        <li><a href="http://www.idpf.org/epub3/latest/overview">EPUB 3 Overview</a>.  EPUB&nbsp;3 will be an important input into Web Publications, Portable Web Publications, and EPUB&nbsp;4. Compatibility with EPUB&nbsp;3 will be a consideration in development of all three specifications. <span class="todo">[If EPUB 3 moves to W3C as a member submission, this entry should be moved into the "W3C documents" section with an updated reference.]</span></li>
+
+                        <li><a href="http://www.idpf.org/epub/profiles/edu/spec/">EPUB for Education</a>. This profile of EPUB&nbsp;3 gives a good example for the type of profiles that the publishing community uses. <span class="todo">[Depending ont he details of the new W3C/IDPF setup this document may have to be moved into the "W3C documents" section, too.]</span></li>
+                    </ul>
+
+                </section>
+
+                <section id="section-out-of-scope">
+                    <h3 id="out-of-scope">Out of Scope</h3>
+                    <p>
+                        The following features are out of scope, and will not be addressed by this Working group.
+                    </p>
+
+                    <ul class="out-of-scope">
+                        <li>Digital Right Management features for Web Publications (however, the Working Group shouldn’t make any design decision that would make such features impossible)</li>
+                        <li>New metadata vocabularies</li>
+                        <li>New document identification schemes (i.e., alternatives to DOI or ISBN)</li>
+                        <li>Maintenance of EPUB3 (to be done in a separate Community Group)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Success Criteria</h3>
+                    <p>
+                        In order to advance to <a href="https://www.w3.org/2015/Process-20150901/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each specification is expected to have <a href="https://www.w3.org/2015/Process-20150901/#implementation-experience">at least two independent implementations</a> of each of feature defined in the specification.
+                    </p>
+
+                    <p>
+                        Each specification should contain a section detailing any known security or privacy implications for implementers, Web authors, and end users.
+                    </p>
+
+                    <p>
+                        Each specification should contain a section describing known impacts on accessibility to users with disabilities, ways the specification features address them, and recommendations for minimizing accessibility problems in implementation.
+                    </p>
+                </section>
+            </section>
+
+            <section id="deliverables">
+                <h2> Deliverables </h2>
+                <p>More detailed milestones and updated publication schedules are available on the <a href="https://www.w3.org/dpub/WG/PubStatus">group publication status page</a>.</p>
+
+                <section id="normative">
+                    <h3>Recommendation-track Deliverables</h3>
+                    <p>
+                        The Working Group will deliver the following W3C normative specifications (titles of the documents are provisional; some documents listed below may be grouped into one document or split into several, constituent documents):
+                    </p>
+
+                    <dl>
+                        <dt id="wp" class="spec">Web Publications</dt>
+                        <dd>
+                            <p>
+                                This specification defines a Web Resource representing a collection of one or more constituent Web Resources, and presented using standard Open Web Platform technologies. A Web Publication may represent a journal or magazine article, an in-house documentation, or a digital book. It provides a standard to access information pertinent for the collection as a whole and that may be usable for the proper presentation of the publication; examples for such information are:
+                            </p>
+                            <ul>
+                                <li>table of content, default or alternate reading order</li>
+                                <li>security and authentication data</li>
+                                <li>metadata like author(s), title, unique identification</li>
+                            </ul>
+                            <p>
+                                The separate <a href="https://www.w3.org/TR/pwp-ucr/">Use Case and Requirement</a> document provides guidelines of the features a Web Publication should fulfill.
+                            </p>
+                        </dd>
+
+                        <dt class="spec" id="pwp">Packaged Web Publications</dt>
+                        <dd>
+                            <p>
+                                This specification defines a way to combine the resources of a Web Publication into a distributable file using a a packaging format.
+                            </p>
+                            <p>
+                                <i class="todo">Something explicit about locator related issues?</i>
+                            </p>
+                        </dd>
+
+                        <dt class="spec" id="epub4">EPUB 4</dt>
+                        <dd>
+                            <p>
+                                This specification defines a <em>profile</em> of Packaged Web Publications that delivers a higher degree of comprehensive accessibility capabilities and of reliability. This specification should be as close as possible to a strict functional superset of EPUB&nbsp;3, with incompatibilities minimized.
+                            </p>
+                        </dd>
+
+                        <dt class="spec" id="structural-semantics">DPUB-ARIA Module 2.0</dt>
+                        <dd>
+                            <p>
+                                This specification builds on the <a href="https://www.w3.org/TR/dpub-aria-1.0/">DPUB-ARIA Module 1.0</a> specification, extending the vocabulary to include the full set of terms defined by the <a href="https://idpf.github.io/epub-vocabs/structure/">EPUB&nbsp;3 Structural Semantics Vocabulary</a>. <span class="todo">It must be decided whether this is a joint deliverable with the ARIA WG or not.</span>
+                            </p>
+                        </dd>
+                    </dl>
+                </section>
+
+                <section class="potential">
+                    <h3>Potential Recommendation-track Deliverables</h3>
+                    <p>
+                        The following deliverables may be developed as Recommendation track documents, if there is consensus in the Working Group that incubation suggests success:
+                    </p>
+                    <dl>
+                        <dt class="spec" id="dci">Document Collection API</dt>
+                        <dd>
+                            <p>
+                                Defines an API for a collection of DOM objects to make possible such operations as Web Publication level search, generation of table of contents, etc.
+                            </p>
+                        </dd>
+
+                        <dt class="spec" id="pom">Publication Object Model API</dt>
+                        <dd>
+                            <p>
+                                Defines a programmable layer for a Web Publication, providing a unified access to the Document Collection API entries, as well as parsing and/or generating Web Publication level information like table of content, metadata, alternative reading order, etc.
+                            </p>
+                        </dd>
+                    </dl>
+
+                    <p class="todo">This whole section should be discussed on whether we would go down that path at all.</p>
+                </section>
+
+                <section id="ig-other-deliverables">
+                    <h3> Other Deliverables </h3>
+                    <p>Other non-normative documents may be created such as: </p>
+                    <ul>
+                        <li>Use case and requirement documents</li>
+                        <li>Test suites and implementation reports for the specification</li>
+                        <li>Primer or Best Practice documents to support web developers when designing applications</li>
+                    </ul>
+                </section>
+
+                <section id="timeline">
+                    <h3>Milestones</h3>
+                    <p>
+                        The group’s <a href="https://www.w3.org/dpub/WG/PubStatus">Publication Status</a> document provides current data about all of the group’s specifications. <span class="todo">[Final URI to be set up if the charter is formally accepted.]</span> Although the group expects all of its active deliverables to progress during this charter period, the charter does not include detailed milestone data for each specification because such data is speculative and easily becomes out of date. The Working Group does expect the following to occur:
+                    </p>
+                    <p class="todo">Put here a timeline view of all deliverables.</p>
+                    <ul class="todo">
+                        <li>FPWD for WP Specification in QX 201X</li>
+                        <li>FPWD for PWP Specification in QX 201X</li>
+                        <li>FPWD for EPUB4 Specification in QX 201X</li>
+                        <li>FPWD for DPUB-ARIA Module 2.0 Specification in QX 201X</li>
+                        <li>WP Specification in QX 201X</li>
+                        <li>PWP Specification in QX 201X</li>
+                        <li>EPUB4 Specification in QX 201X</li>
+                        <li>DPUB-ARIA Module 2.0 Specification in QX 201X</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section id="coordination">
+                <h2>Coordination</h2>
+                <p>
+                    For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/Charter.html#horizontal-review">horizontal review</a> for accessibility, internationalization, performance, privacy, and security with the relevant Working and Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>. Invitation for review must be issued during each major standards-track document transition, including <a href="https://www.w3.org/2015/Process-20150901/#RecsWD" title="First Public Working Draft">FPWD</a> and <a href="https://www.w3.org/2015/Process-20150901/#RecsCR" title="Candidate Recommendation">CR</a>, and should be issued when major changes occur in a specification.
+                </p>
+
+                <p>
+                    Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/2015/Process-20150901/#WGCharter">W3C Process Document</a>:
+                </p>
+
+                <section>
+                    <h3 id="w3c-coordination">W3C Groups</h3>
+                    <dl>
+                        <dt><a href="https://www.w3.org/WebPlatform/WG/">Web Platform Working Group</a></dt>
+                        <dd>
+                            <p>
+                                This group develops and/or maintains a number of specifications that may be fundamental for the specification and/or the implementation of Web Publications. Examples are:
+                            </p>
+
+                            <ul style="margin-bottom:1em">
+                                <li><em>Web App Manifests</em>, that may be the basis for specifying the information (table of content, metadata, etc) provided by a Web Publication;</li>
+                                <li><em>Service Workers</em>, that may become the fundamental building block for the implementation and testing of Web Applications</li>
+                                <li><em>Packaging on the Web</em> (jointly developed with the <a href="http://www.w3.org/2001/tag/">Technical Architecture Group</a>) that may provide a way of packaging for the purpose of Packaged Web Publications</li>
+                            </ul>
+                        </dd>
+
+                        <dt><a href="http://www.w3.org/Style/CSS/members">CSS Working Group</a></dt>
+                        <dd>
+                            <p>
+                                A number of features described in the Web Publication UCR document (e.g., personalization) may require new CSS functionalities
+                            </p>
+                        </dd>
+
+                        <dt><a href="http://www.w3.org/WAI/ARIA/">Accessible Rich Internet Applications WG</a></dt>
+                        <dd>
+                            <p>
+                                This Working Group is responsible for the development of ARIA; the development of DPUB-ARIA Module&nbsp;2.0 should be done in close cooperation with the further development of ARIA in general
+                            </p>
+                        </dd>
+                    </dl>
+
+                    <h3 id="external-coordination">External Organizations</h3>
+                    <dl>
+                        <dt><a href="bisg.org">Book Industry Study Group (BISG)</dt>
+                        <dd>
+                            <p>
+                                This group is responsible for the <a href="http://epubtest.org/">EPUB&nbsp;3 Support Grid</a> providing information on the current reading system support for EPUB&nbsp;3; this tool may have to be extended to WP in general, and EPUB&nbsp;4 in particular
+                            </p>
+                        </dd>
+
+                        <dt><a href="https://edrlab.org/edrlab/">EDRLab</a></dt>
+                        <dd>
+                            <p>
+                                EDRLab maintains the <a href="https://github.com/IDPF/epubcheck">EPUBCheck</a>, and EPUB&nbsp;3 validation tool; this tool may evolve into a similar tool for WP in general, and EPUB&nbsp;4 in particular
+                            </p>
+
+                        </dd>
+                    </dl>
+                </section>
+            </section>
+
+            <section class="participation">
+                <h2 id="participation"> Participation </h2>
+                <p>
+                    To be successful, this Working Group is expected to have 6 or more active participants for its duration, including representatives from key implementors and users (e.g, publishers, authors) of this specification, and active Editors and Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute half of a day per week towards the Working Group. There is no minimum requirement for other Participants.
+                </p>
+
+                <p>
+                    The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href="#communication">Communication</a>.
+                </p>
+
+                <p>
+                    The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>.
+                </p>
+            </section>
+
+            <section id="communication">
+                <h2> Communication </h2>
+                <p id="public">
+                    Technical discussions for this Working Group are conducted in <a href="https://www.w3.org/2015/Process-20150901/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed on a public repository, and may permit direct public contribution requests. The meetings themselves are not open to public participation, however.
+                </p>
+
+                <p>
+                    Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="https://www.w3.org/dpub/WG/">Digital Publishing Working Group home page.</a>
+                </p>
+
+                <p>
+                    Most Digital Publishing Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
+                </p>
+
+                <p>
+                    This group primarily conducts its technical work: on the public mailing list <a class="todo" id="public-email" href="mailto:public-dpub-wg@w3.org">public-dpub-wg@w3.org</a> (<a class="todo" href="http://lists.w3.org/Archives/Public/public-dpub-wg/">archive</a>) and on <a class="todo" id="public-github" href="https://github.com/w3c/dpub-wg/issues">GitHub issues</a>. The public is invited to review, discuss and contribute to this work.
+                </p>
+
+                <p>
+                    The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.
+                </p>
+            </section>
+
+            <section id="decisions">
+                <h2> Decision Policy </h2>
+                <p>
+                    This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/2015/Process-20150901/policies#Consensus"> W3C Process Document (section 3.3</a>). Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.
+                </p>
+
+                <p>
+                    However, if a decision is necessary for timely progress, but consensus is not achieved after careful consideration of the range of views presented, the Chairs may call for a group vote, and record a decision along with any objections.
+                </p>
+
+                <p>
+                    To afford asynchronous decisions and organizational deliberation, any resolution (including publication decisions) taken in a face-to-face meeting or teleconference will be considered provisional. A call for consensus (CfC) will be issued for all resolutions (for example, via email and/or web-based survey), with a response period from one week to 10 working days, depending on the chair's evaluation of the group consensus on the issue. If no objections are raised on the mailing list by the end of the response period, the resolution will be considered to have consensus as a resolution of the Working Group.
+                </p>
+
+                <p>
+                    All decisions made by the group should be considered resolved unless and until new information becomes available, or unless reopened at the discretion of the Chairs or the Director.
+                </p>
+
+                <p>
+                    This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/policies#Votes">W3C Process Document (Section 3.4, Votes)</a>, and includes no voting procedures beyond what the Process Document requires.
+                </p>
+            </section>
+
+            <section id="patentpolicy">
+                <h2> Patent Policy </h2>
+                <p>
+                    This Working Group operates under the <a href="http://w3.org/Consortium/Patent-Policy-20040205/">W3C Patent Policy</a> (5 February 2004 Version). To promote the widest adoption of Web standards, W3C seeks to issue Recommendations that can be implemented, according to this policy, on a Royalty-Free basis. For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/2004/01/pp-impl/">W3C Patent Policy Implementation</a>.
+                </p>
+            </section>
+
+            <section id="licensing">
+                <h2>Licensing</h2>
+                <p>
+                    This Working Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-documents">W3C Document license</a> for all its deliverables.
+                </p>
+            </section>
+
+            <section id="about">
+                <h2> About this Charter </h2>
+                <p>
+                    This charter has been created according to <a href="https://www.w3.org/Consortium/Process/groups#GAGeneral">section 5.2</a> of the <a href="https://www.w3.org/Consortium/Process">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+                </p>
+
+                <section id="history">
+                   <h3>Charter History</h3>
+
+                   <p>
+                       The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/2015/Process-20150901/#CharterReview">W3C Process Document (section 5.2.3)</a>:
+                   </p>
+
+                   <table class="history">
+                       <tbody>
+                           <tr>
+                               <th>Charter Period</th>
+                               <th>Start Date</th>
+                               <th> End Date</th>
+                               <th>Changes</th>
+                           </tr>
+                           <tr>
+                               <th><a href="">Initial Charter</a></th>
+                               <td><i class="todo">[dd monthname yyyy] Expected</i></td>
+                               <td><i class="todo">[dd monthname yyyy] Expected</i></td>
+                               <td>–</td>
+                           </tr>
+                       </tbody>
+                    </table>
+                 </section>
+            </section>
+
+        </main>
+
+        <hr>
+
+        <footer>
+            <address>Publishing BG &amp; <a href="https://www.w3.org/dpub/IG/">DPUB IG</a>; ed:&nbsp;<a href="mailto:ivan@w3.org">Ivan Herman</a></address>
+            <p class="copyright">
+                <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2017&nbsp; <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> ( <a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a> ), All Rights Reserved. <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.
+            </p>
+            <p>$Date: 2016/12/08 16:11:38 $</p>
+        </footer>
+    </body>
+</html>
