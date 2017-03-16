@@ -1,5 +1,7 @@
 # Charter development for a Publishing Working Group
 
+[![Join the chat at https://gitter.im/w3c/dpubwg-charter](https://badges.gitter.im/w3c/dpubwg-charter.svg)](https://gitter.im/w3c/dpubwg-charter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This an [early draft](http://w3c.github.io/dpubwg-charter/) for the chartering process of a Publishing Working Group, envisioned as part of the [combination of IDPF and W3C](https://www.w3.org/2017/01/pressrelease-idpf-w3c-combination.html.en) announced on the 1st of February 2017
 The development of this charter is owned by the W3C Staff but is driven by the [Publishing Business Group](https://www.w3.org/community/publishingbg/). The early draft charter draws on the work of the [Digital Publishing Interest Group](https://www.w3.org/dpub/IG/), and that group will continue to contribute to the technical aspects of the charter.
 
