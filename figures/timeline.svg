@@ -98,14 +98,14 @@
             <g transform="translate(232,117)">
                 <use xlink:href="#milestone_line" />
 				<text font-family="sans-serif" font-size="8" transform="translate(0,-3.5)">
-					<textPath xlink:href="#milestone_line" startOffset="30%">CR: WP, PWP, EPUB4</textPath>
+					<textPath xlink:href="#milestone_line" startOffset="31%">CR: WP, PWP, EPUB4</textPath>
 				</text>
             </g>
 
             <g transform="translate(384,117)">
                 <use xlink:href="#milestone_line" />
 				<text font-family="sans-serif" font-size="8" transform="translate(0,-3.5)">
-					<textPath xlink:href="#milestone_line" startOffset="30%">REC: WP, PWP, EPUB4</textPath>
+					<textPath xlink:href="#milestone_line" startOffset="31%">REC: WP, PWP, EPUB4</textPath>
 				</text>
             </g>
         </g>
@@ -121,13 +121,13 @@
             <g transform="translate(203,117)">
                 <use xlink:href="#milestone_line" />
 				<text font-family="sans-serif" font-size="8" transform="translate(0,-3.5)">
-					<textPath xlink:href="#milestone_line" startOffset="30%">CR: DPUB-ARIA</textPath>
+					<textPath xlink:href="#milestone_line" startOffset="31%">CR: DPUB-ARIA</textPath>
 				</text>
             </g>
             <g transform="translate(310,117)">
                 <use xlink:href="#milestone_line" />
 				<text font-family="sans-serif" font-size="8" transform="translate(0,-3.5)">
-					<textPath xlink:href="#milestone_line" startOffset="30%">REC: DPUB-ARIA</textPath>
+					<textPath xlink:href="#milestone_line" startOffset="31%">REC: DPUB-ARIA</textPath>
 				</text>
             </g>
         </g>
