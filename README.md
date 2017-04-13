@@ -1,12 +1,12 @@
 # Charter development for a Publishing Working Group
 
-[![Join the chat at https://gitter.im/w3c/dpubwg-charter](https://badges.gitter.im/w3c/dpubwg-charter.svg)](https://gitter.im/w3c/dpubwg-charter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+This repo contains the [draft charter](http://w3c.github.io/dpubwg-charter/) for a Publishing Working Group, envisioned as part of the [combination of IDPF and W3C](https://www.w3.org/2017/01/pressrelease-idpf-w3c-combination.html.en) announced on the 1st of February 2017.
+The development of this charter was driven by the [Publishing Business Group](https://www.w3.org/community/publishingbg/) and it drew on the work of the [Digital Publishing Interest Group](https://www.w3.org/dpub/IG/).
 
-This an [early draft](http://w3c.github.io/dpubwg-charter/) for the chartering process of a Publishing Working Group, envisioned as part of the [combination of IDPF and W3C](https://www.w3.org/2017/01/pressrelease-idpf-w3c-combination.html.en) announced on the 1st of February 2017
-The development of this charter is owned by the W3C Staff but is driven by the [Publishing Business Group](https://www.w3.org/community/publishingbg/). The early draft charter draws on the work of the [Digital Publishing Interest Group](https://www.w3.org/dpub/IG/), and that group will continue to contribute to the technical aspects of the charter.
+At this time the charter (whose [official location](https://www.w3.org/2017/04/publ-wg-charter/) has moved to the W3C space) is under the review of the W3C Advisory Committee. Unless some objections are raised during the approval process, the Working Group should begin its activities at the beginning of June 2017.
 
-Issues and comments from the public at large are encouraged and highly welcome.
-Comments should be submitted by raising [issues on this (public) repository](https://github.com/w3c/dpubwg-charter/issues).
-(In the case of a problems, comments can also be sent to the editor of this document, Ivan Herman, [ivan@w3.org](mailto:ivan@w3.org), who will submit the comment to the issue list in the commenter’s name.)
+(See the [HTML view](http://w3c.github.io/dpubwg-charter/) of this page, or look at the [official location](https://www.w3.org/2017/04/publ-wg-charter/).)
 
-(See the [HTML view](http://w3c.github.io/dpubwg-charter/) of the draft.)
+---
+
+Ivan Herman, [ivan@w3.org](mailto:ivan@w3.org), proposed Staff Contact for the Working Group.
