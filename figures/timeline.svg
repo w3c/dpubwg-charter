@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 -10 440 157" xml:space="preserve">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 -10 512 157" xml:space="preserve">
 
-	<style type="text/css">
+    <style type="text/css">
 		@font-face {
 		  font-family: 'Noto Sans';
 		  font-style: normal;
 		  font-weight: 400;
 		  src:  local('Noto Sans'), local('NotoSans'), url(https://fonts.gstatic.com/s/notosans/v6/LeFlHvsZjXu2c3ZRgBq9nFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
 		}
-
 	</style>
 
 
@@ -17,7 +16,7 @@
 
     <!-- base line -->
     <line class="baseline" stroke="grey" stroke-dasharray="6,6" stroke-width="0.5"
-		  x1="15.5" y1="120" x2="421.5" y2="120" />
+		  x1="15.5" y1="120" x2="493.5" y2="120" />
 
     <defs>
 		<desc>Lines used as tickmarks on the baseline; red for the january entries, black for the others</desc>
@@ -82,6 +81,15 @@
             <use xlink:href="#red_tickline" />
             <text x="-8" y="20" font-family="Noto Sans" font-size="6">jan ‘20</text>
         </g>
+
+		<g transform="translate(437,115)">
+            <use xlink:href="#black_tickline" />
+            <text x="-8" y="20" font-family="Noto Sans" font-size="6">apr ‘20</text>
+        </g>
+		<g transform="translate(473,115)">
+            <use xlink:href="#black_tickline" />
+            <text x="-8" y="20" font-family="Noto Sans" font-size="6">jul ‘20</text>
+        </g>
     </g>
 
     <defs>
@@ -107,14 +115,14 @@
 				</text>
             </g>
 
-            <g transform="translate(232,117)">
+            <g transform="translate(268,117)">
                 <use xlink:href="#milestone_line" />
 				<text font-family="Noto Sans" font-size="8" transform="translate(0,-3.5)">
 					<textPath xlink:href="#milestone_line" startOffset="31%">CR: WP, PWP, EPUB4</textPath>
 				</text>
             </g>
 
-            <g transform="translate(384,117)">
+            <g transform="translate(456,117)">
                 <use xlink:href="#milestone_line" />
 				<text font-family="Noto Sans" font-size="8" transform="translate(0,-3.5)">
 					<textPath xlink:href="#milestone_line" startOffset="31%">REC: WP, PWP, EPUB4</textPath>
@@ -130,13 +138,13 @@
 					<textPath xlink:href="#milestone_line" startOffset="31%">FPWD: DPUB-ARIA</textPath>
 				</text>
             </g>
-            <g transform="translate(203,117)">
+            <g transform="translate(239,117)">
                 <use xlink:href="#milestone_line" />
 				<text font-family="Noto Sans" font-size="8" transform="translate(0,-3.5)">
 					<textPath xlink:href="#milestone_line" startOffset="31%">CR: DPUB-ARIA</textPath>
 				</text>
             </g>
-            <g transform="translate(310,117)">
+            <g transform="translate(382,117)">
                 <use xlink:href="#milestone_line" />
 				<text font-family="Noto Sans" font-size="8" transform="translate(0,-3.5)">
 					<textPath xlink:href="#milestone_line" startOffset="31%">REC: DPUB-ARIA</textPath>
