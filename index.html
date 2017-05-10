@@ -121,7 +121,7 @@
             <h1 id="title">Publishing Working Group Charter</h1>
 
             <p class="mission">
-                 The <strong>mission</strong> of the <a href="https://www.w3.org/dpub/WG/">Publishing Working Group</a> is to enable all publications—with all their specificities and traditions—to become first-class entities on the Web.
+                 The <strong>mission</strong> of the <a href="https://www.w3.org/dpub/WG/">Publishing Working Group</a> is to enable all Web Publications (see below)—with all their specificities and traditions—to become first-class entities on the Web.
                  The WG will provide the necessary technologies on the Open Web Platform to make the combination of traditional publishing and the Web complete in terms of accessibility, usability, portability, distribution, archiving, offline access, and reliable cross referencing.
             </p>
 
@@ -160,9 +160,10 @@
 
             <section id="goals" class="goals">
                 <h2>Goals</h2>
+                <div class="warning">What if we move much of this section to after scope?</div>
                 <p>
                     Publications, from magazine articles to product documentation, from electronic books to scholarly journal articles, are increasingly present on the Web.
-                    While following the traditions of the publishing world in terms of typesetting, layout, ergonomy, and usage patterns, the Web brings a new level of pervasive accessibility, internationalization, addressability, and interconnectedness to these publications.
+                    While following the traditions of the publishing world in terms of typesetting, layout, ergonomics, and usage patterns, the Web brings a new level of pervasive accessibility, internationalization, addressability, and interconnectedness to these publications.
                     However, the combination of traditional publishing and the Web is not yet perfect: the <a href="https://www.w3.org/TR/pwp-ucr/">“Web Publications Use Cases and Requirements”</a> document, published by the <a href="https://www.w3.org/dpub/IG/">Digital Publishing Interest Group</a>, lists a number of use cases and requirements for publications on the Web.
                     It will be the task of the Working Group to identify those requirements that are not yet fully covered by the current environments based on the Open Web Platform, and would therefore need further work, while re-using existing technologies developed by other Working Groups as much as possible and practical.
                 </p>
@@ -175,12 +176,13 @@
 
             <section id="scope" class="scope">
                 <h2>Scope</h2>
+                
                 <p>
-                    For the purpose of this document, a Web Publication (WP) is a collection of one or more constituent resources, organized together in a uniquely identifiable grouping that may be presented using standard Open Web Platform technologies.
-                    A Web Publication is not just a collection of links. The act of publishing involves obtaining resources and organizing them into a publication, which must be “manifested” by having files on a Web server.
-                    Thus the publisher provides an <a href="https://tools.ietf.org/html/rfc6454">origin</a> for the WP, and a URL that can uniquely identify that <a href="https://archive.ifla.org/VII/s13/frbr/frbr1.htm#3.2">(FRBR) manifestation</a>.
-                    A Web Publication must provide a number of features whose detailed specification is in the scope of this Working Group.
-                    While some of the detailed requirements have already been <a href="https://www.w3.org/TR/pwp-ucr/">documented elsewhere</a>, the most important and high-level characteristics that must be translated into specifications are:
+                    <strong>Definition: Web Publication (WP):</strong> A collection of one or more constituent resources, organized together in a uniquely identifiable grouping that may be presented using standard Open Web Platform technologies is a collection of one or more constituent resources, organized together in a uniquely identifiable grouping that may be presented using standard Open Web Platform technologies.
+                    <!--A Web Publication is not just a collection of links.--> The act of publishing involves obtaining resources and organizing them into a publication, which must be “manifested” by having files on a Web server.
+                    Thus the publisher provides an <a href="https://tools.ietf.org/html/rfc6454">origin</a> for the WP, and a URL that can uniquely identify that <a href="https://archive.ifla.org/VII/s13/frbr/frbr1.htm#3.2">(FRBR) (Functional Requirements for Bibliographic Records) manifestation</a>.
+                    <!--A Web Publication must provide a number of features whose detailed specification is in the scope of this Working Group.-->
+                   The detailed requirements have already been <a href="https://www.w3.org/TR/pwp-ucr/">documented elsewhere</a>, the most important and high-level characteristics that must be translated into specifications are:
                 </p>
                 <ul>
                     <li>
@@ -205,7 +207,7 @@
                         A Web Publication, having an identity and nature beyond its constituent resources, will have metadata that describes the publication as a whole.
                     </li>
 
-                    <li>A Web Publication must provide access to a range meta-information including (but not restricted to):
+                    <li>A Web Publication must provide access to a range of meta-information including (but not restricted to):
                         <ul style="margin-top:0.2em">
                             <li>table of contents, default or alternate reading order;</li>
                             <li>security and authentication data;</li>
@@ -216,23 +218,147 @@
 
                 <p>
                     Recommendation-track deliverables will contain mechanisms to make Web Publications accessible to a broad range of readers with different needs and capabilities.
-                    This includes general WCAG and WAI requirements of the W3C as well as requirements for international readers using different scripts and document formats.
-                    Additional extended requirements will be identified as conformance requirements in the Working Group’s normative specifications, which will serve as a reference for content producers and for incorporation of publishing requirements in W3C standards like WCAG.
+                    This includes general Web Content Accessibility Guidelines (WCAG) and Web Accessiblity Initiative (WAI) requirements of the W3C as well as requirements for international readers using different scripts and document formats.
+                    <!--Extended requirements will be identified as conformance requirements in the Working Group’s normative specifications, which will serve as a reference for content producers and for incorporation of publishing requirements in W3C standards like WCAG.-->
                     Profiles of Web Publications may be defined with more stringent accessibility requirements.
                 </p>
-
+<!--
                 <p>
                     <a href="https://www.w3.org/Submission/2017/SUBM-epub31-20170125/">EPUB</a> has become one of the fundamental technologies for the global publishing ecosystem (see the <a href="https://w3c.github.io/pub-bg/docs/EPUB4_business_case.html">separate document</a>, published by the <a href="https://www.w3.org/community/publishingbg/">W3C Publishing Business Group</a>, for more details and background).
                     It is the preferred format for a broad range of types of publications, not only for distribution but increasingly also for authoring and production workflows.
                     As part of the work on Web Publications, described in this charter, it is essential that a next generation of EPUB, currently referred to as EPUB&nbsp;4, retain the specificity, portability, predictability, accessibility, and internationalization required by the publishing ecosystem while benefitting from the improved features and functionalities offered by Packaged Web Publications.
                     EPUB&nbsp;4 should not be in conflict with Web Publications; it should be a type of Web Publication that provides the predictability and interoperability that this ecosystem has come to rely on.
-                </p>
+                </p>-->
+                
+   
 
-                <section id="input-documents">
-                    <h3>Input Documents</h3>
+                <section id="section-out-of-scope">
+                    <h3 id="out-of-scope">Out of Scope</h3>
+                    <p>
+                        The following features are out of scope, and will not be addressed by this Working group.
+                    </p>
+
+                    <ul class="out-of-scope">
+                        <li>
+                            Digital Rights Management (DRM) features for Web Publications.
+                        </li>
+
+                        <li>
+                            New metadata vocabularies.
+                        </li>
+
+                        <li>
+                            New document identification schemes (i.e., alternatives to DOI or ISBN).
+                        </li>
+
+                        <li>
+                            Maintenance of EPUB&nbsp;3 (done in the separate <a href="https://www.w3.org/community/epub3/">EPUB&nbsp;3 Community Group</a>).
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <div class="warning">why is this here? isn't it an assumption for all specs?</div>
+                    <h3>Success Criteria</h3>
+                    <p>
+                        In order to advance to <a href="https://www.w3.org/2017/Process-20170301/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each specification is expected to have <a href="https://www.w3.org/2017/Process-20170301/#implementation-experience">at least two independent implementations</a> of each of feature defined in the specification.
+                    </p>
 
                     <p>
-                        The following documents <i>may</i> be considered by the Working Group as inputs to the specifications to be developed.
+                        Each specification should contain a section detailing any known security or privacy implications for implementers, Web authors, and end users.
+                    </p>
+
+                    <p>
+                        Each specification should contain a section describing: known impacts on accessibility for users with disabilities; ways the specification features address those impacts; and recommendations for minimizing accessibility problems in implementation.
+                    </p>
+
+                    <p>
+                        Testing plans for each specification should be provided, starting from the earliest drafts.
+                    </p>
+                </section>
+            </section>
+
+            <section id="deliverables">
+                <h2> Deliverables </h2>
+                <p>More detailed milestones and updated publication schedules are available on the <a href="@@@@@">group publication status page</a>.</p>
+
+                <p>To facilitate timely progress on the Recommendation track and for the sake of maintainability the Working group may, based on consensus in the Working Group, split or merge its deliverables.</p>
+
+                <section id="normative">
+                    <h3>Recommendation-track Deliverables</h3>
+                    <p>
+                        The Working Group will deliver the following W3C normative specifications (titles of the documents are provisional; some documents listed below may be grouped into one document or split into several, constituent documents):
+                    </p>
+
+                    <dl>
+                        <dt id="wp" class="spec">Web Publications</dt>
+                        <dd>
+                            <p>
+                                This specification defines a Web Resource representing a collection of one or more constituent Web Resources, organized together in a uniquely identifiable grouping that may be presented using standard Open Web Platform technologies.
+                                A Web Publication may represent a journal or magazine article, an in-house documentation, or a digital book.
+                                It provides a standard to access information pertinent for the collection as a whole and that may be usable for the proper presentation of the publication.
+                            </p>
+                        </dd>
+
+                        <dt class="spec" id="pwp">Packaged Web Publications</dt>
+                        <dd>
+                            <p>
+                                This specification defines a way to combine the resources of a Web Publication into a distributable file using a packaging format.
+                                Note that if the <a href="https://w3ctag.github.io/packaging-on-the-web/">Packaging on the Web</a> work leads to a W3C Recommendation and fulfills all the requirements for Packaged Web Publications, publishing this deliverable <i>may</i> become unnecessary.
+                            </p>
+                        </dd>
+
+                        <dt class="spec" id="epub4">EPUB 4</dt>
+                        <dd>
+                            <p>
+                                This specification defines a functional <em>profile</em> of the general idea of Packaged Web Publications that may deliver a higher degree of comprehensive accessibility capabilities and reliability.
+                                This specification should generally be a functional superset of EPUB&nbsp;3.1.
+                                Functional round-tripping to/from EPUB&nbsp;3.1 considered highly desirable.
+                            </p>
+                        </dd>
+
+                        <dt class="spec" id="structural-semantics">DPUB-ARIA Module&nbsp;2.0</dt>
+                        <dd>
+                            <p>
+                                This specification extends the <a href="https://www.w3.org/TR/dpub-aria-1.0/">DPUB-ARIA Module&nbsp;1.0</a> specification, adding terms for a more complete coverage of publication-related terms.
+                                Its primary input is the full set of terms defined by the <a href="https://idpf.github.io/epub-vocabs/structure/">EPUB&nbsp;3 Structural Semantics Vocabulary</a> but other, similar vocabularies will also be considered.
+                            </p>
+                        </dd>
+                    </dl>
+                </section>
+
+                <section id="ig-other-deliverables"> 
+                    
+                    <h3> Other Deliverables </h3>
+<div class="warning">This whole section could be eliminated. We can write notes at any time. </div>
+                    <dl>
+                        <dt class="spec">Requirements for Latin Text Layout and Pagination (Working Group Note)</dt>
+                        <dd>
+                            <p>
+                                This document will describe the requirements for pagination and layout of publications that use the Latin script, based on the tradition of print book design and composition.
+                                These principles can inform the pagination of digital content as well, and serve as a reference for the CSS Working Group and other interested parties.
+                            </p>
+
+                            <p>
+                                This deliverable draws upon a <a href="http://w3c.github.io/dpub-pagination/">previous version of this document</a>, published by the Digital Publishing Interest Group.
+                            </p>
+                        </dd>
+
+                    </dl>
+
+                    <p>Other non-normative documents may also be created such as: </p>
+                    <ul>
+                        <li>Use case and requirement documents.</li>
+                        <li>Test suites and implementation reports for the specification.</li>
+                        <li>Primers or Best Practice documents to support content authors and application developers.</li>
+                    </ul>
+
+                    <p>The group should also contribute to the ongoing work to newer releases of WCAG to ensure the inclusion of publication-specific features.</p>
+                     <section id="input-documents">
+                    <h3>Input Documents</h3> 
+<div class="warning">in other charters, this is called dependencies. It implies that if these docs change, our scope docs change too. </div>
+                    <p>
+                        The following documents <i>may</i> be considered by the Working Group as inputs to the specifications to be developed. It will be the task of the Working Group to identify those requirements that are not yet fully covered by the current environments based on the Open Web Platform, and would therefore need further work, while re-using existing technologies developed by other Working Groups as much as possible and practical.
                     </p>
 
                     <h4>W3C documents</h4>
@@ -303,127 +429,6 @@
 
                     </ul>
                 </section>
-
-                <section id="section-out-of-scope">
-                    <h3 id="out-of-scope">Out of Scope</h3>
-                    <p>
-                        The following features are out of scope, and will not be addressed by this Working group.
-                    </p>
-
-                    <ul class="out-of-scope">
-                        <li>
-                            Digital Rights Management (DRM) features for Web Publications.
-                        </li>
-
-                        <li>
-                            New metadata vocabularies.
-                        </li>
-
-                        <li>
-                            New document identification schemes (i.e., alternatives to DOI or ISBN).
-                        </li>
-
-                        <li>
-                            Maintenance of EPUB&nbsp;3 (done in the separate <a href="https://www.w3.org/community/epub3/">EPUB&nbsp;3 Community Group</a>).
-                        </li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h3>Success Criteria</h3>
-                    <p>
-                        In order to advance to <a href="https://www.w3.org/2017/Process-20170301/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each specification is expected to have <a href="https://www.w3.org/2017/Process-20170301/#implementation-experience">at least two independent implementations</a> of each of feature defined in the specification.
-                    </p>
-
-                    <p>
-                        Each specification should contain a section detailing any known security or privacy implications for implementers, Web authors, and end users.
-                    </p>
-
-                    <p>
-                        Each specification should contain a section describing: known impacts on accessibility for users with disabilities; ways the specification features address those impacts; and recommendations for minimizing accessibility problems in implementation.
-                    </p>
-
-                    <p>
-                        Testing plans for each specification should be provided, starting from the earliest drafts.
-                    </p>
-                </section>
-            </section>
-
-            <section id="deliverables">
-                <h2> Deliverables </h2>
-                <p>More detailed milestones and updated publication schedules are available on the <a href="@@@@@">group publication status page</a>.</p>
-
-                <p>To facilitate timely progress on the Recommendation track and for the sake of maintainability the Working group may, based on consensus in the Working Group, split or merge its deliverables.</p>
-
-                <section id="normative">
-                    <h3>Recommendation-track Deliverables</h3>
-                    <p>
-                        The Working Group will deliver the following W3C normative specifications (titles of the documents are provisional; some documents listed below may be grouped into one document or split into several, constituent documents):
-                    </p>
-
-                    <dl>
-                        <dt id="wp" class="spec">Web Publications</dt>
-                        <dd>
-                            <p>
-                                This specification defines a Web Resource representing a collection of one or more constituent Web Resources, organized together in a uniquely identifiable grouping that may be presented using standard Open Web Platform technologies.
-                                A Web Publication may represent a journal or magazine article, an in-house documentation, or a digital book.
-                                It provides a standard to access information pertinent for the collection as a whole and that may be usable for the proper presentation of the publication.
-                            </p>
-                        </dd>
-
-                        <dt class="spec" id="pwp">Packaged Web Publications</dt>
-                        <dd>
-                            <p>
-                                This specification defines a way to combine the resources of a Web Publication into a distributable file using a packaging format.
-                                Note that if the <a href="https://w3ctag.github.io/packaging-on-the-web/">Packaging on the Web</a> work leads to a W3C Recommendation and fulfills all the requirements for Packaged Web Publications, publishing this deliverable <i>may</i> become unnecessary.
-                            </p>
-                        </dd>
-
-                        <dt class="spec" id="epub4">EPUB 4</dt>
-                        <dd>
-                            <p>
-                                This specification defines a functional <em>profile</em> of the general idea of Packaged Web Publications that may deliver a higher degree of comprehensive accessibility capabilities and reliability.
-                                This specification should generally be a functional superset of EPUB&nbsp;3.1.
-                                Functional round-tripping to/from EPUB&nbsp;3.1 considered highly desirable.
-                            </p>
-                        </dd>
-
-                        <dt class="spec" id="structural-semantics">DPUB-ARIA Module&nbsp;2.0</dt>
-                        <dd>
-                            <p>
-                                This specification extends the <a href="https://www.w3.org/TR/dpub-aria-1.0/">DPUB-ARIA Module&nbsp;1.0</a> specification, adding terms for a more complete coverage of publication-related terms.
-                                Its primary input is the full set of terms defined by the <a href="https://idpf.github.io/epub-vocabs/structure/">EPUB&nbsp;3 Structural Semantics Vocabulary</a> but other, similar vocabularies will also be considered.
-                            </p>
-                        </dd>
-                    </dl>
-                </section>
-
-                <section id="ig-other-deliverables">
-                    <h3> Other Deliverables </h3>
-
-                    <dl>
-                        <dt class="spec">Requirements for Latin Text Layout and Pagination (Working Group Note)</dt>
-                        <dd>
-                            <p>
-                                This document will describe the requirements for pagination and layout of publications that use the Latin script, based on the tradition of print book design and composition.
-                                These principles can inform the pagination of digital content as well, and serve as a reference for the CSS Working Group and other interested parties.
-                            </p>
-
-                            <p>
-                                This deliverable draws upon a <a href="http://w3c.github.io/dpub-pagination/">previous version of this document</a>, published by the Digital Publishing Interest Group.
-                            </p>
-                        </dd>
-
-                    </dl>
-
-                    <p>Other non-normative documents may also be created such as: </p>
-                    <ul>
-                        <li>Use case and requirement documents.</li>
-                        <li>Test suites and implementation reports for the specification.</li>
-                        <li>Primers or Best Practice documents to support content authors and application developers.</li>
-                    </ul>
-
-                    <p>The group should also contribute to the ongoing work to newer releases of WCAG to ensure the inclusion of publication-specific features.</p>
                 </section>
 
                 <section id="timeline">
@@ -576,8 +581,8 @@
             <section class="participation">
                 <h2 id="participation">Participation</h2>
                 <p>
-                    To be successful, this Working Group is expected to have 6 or more active participants for its duration, including representatives from key implementors and users (e.g, publishers, authors) of this specification, and active Editors and Test Leads for each specification.
-                    The Chairs, specification Editors, and Test Leads are expected to contribute half of a day per week towards the Working Group.
+                    To be successful, this Working Group is expected to have 6 or more active participants for its duration, including representatives from key implementers and users (e.g., publishers, authors) of this specification, and active Editors and Test Leads for each specification.
+                    The Chairs, specification Editors, and Test Leads are expected to contribute 4 hours per week towards the Working Group.
                     There is no minimum requirement for other Participants.
                 </p>
 
@@ -604,7 +609,7 @@
 
                 <p>
                     Most Publishing Working Group teleconferences will focus on discussion of particular specifications.
-                    The calls will be conducted on a weekly basis.
+                    The calls will be conducted on a weekly basis. The WG will make use of tools like github repositories, email lists, IRC channels, and other appropriate communication technologies. The <a href='...'>decision procedures</a> of the group are also defined to allow asynchronous work.
                 </p>
 
                 <p>
@@ -616,6 +621,8 @@
                     The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.
                 </p>
             </section>
+            
+            
 
             <section id="decisions">
                 <h2> Decision Policy </h2>
@@ -703,4 +710,4 @@
             </p>
         </footer>
     </body>
-</html>
+</html>  
