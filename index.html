@@ -3,22 +3,10 @@
     <head>
         <meta content="text/html; charset=utf-8" http-equiv="content-type">
         <title>Publishing WG Charter</title>
-        <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen">
+        <link rel="stylesheet" type="text/css" href="https://www.w3.org/2005/10/w3cdoc.css" media="screen">
         <link rel="stylesheet" type="text/css" href="https://www.w3.org/Guide/pubrules-style.css">
         <link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css">
         <style type="text/css">
-            body {
-                background-image: url('data:image/svg+xml,\
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 100" width="100%" height="50%" opacity=".04">\
-                        <g transform="translate(73,45) rotate(-35)">\
-                            <rect fill="none" stroke="black" stroke-width="2" width="145" x="-73" y="3" height="20" rx="10" ry="10"/>\
-                            <text x="0" y="20" font-family="sans-serif" font-size="18" fill="black" text-anchor="middle">SHADOW COPY</text>\
-                        </g>\
-                    </svg>\
-                ');
-                background-position: top center;
-                background-repeat: repeat;
-            }
             ul#navbar {
               font-size: small;
             }
@@ -86,6 +74,32 @@
             section section {
                 margin-left: 2em;
             }
+
+            h3 {
+                counter-reset: h4
+            }
+
+            h4:before {
+                  content: counter(h2) "." counter(h3) "." counter(h4) " ";
+                  display: inline;
+                }
+            h4 {
+                counter-increment: h4;
+                counter-reset: h5;
+            }
+
+            h5:before {
+                content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) " ";
+                display: inline;
+            }
+            h5 {
+                counter-increment: h5;
+            }
+
+            h4, h5, h6 {
+                font-size: 100%;
+            }
+
         </style>
     </head>
     <body>
@@ -109,25 +123,16 @@
             </p>
         </header>
         <main>
-            <!-- <p id="warning">DRAFT</p> -->
-            <div class="warning">
-                <h1>Draft</h1>
-
-                <p>This is the unofficial “shadow” copy of the <a href="index.html">draft charter of the Publication Working Group</a>, currently under AC review. This document is the product of team and community discussion, seeking consensus among member reviewers.</p>
-
-                <p>There is a separate <a href="diff.html">diff file</a>, highlighting the changes as a result of the AC review.</p>
-            </div>
-
             <h1 id="title">Publishing Working Group Charter</h1>
 
             <p class="mission">
-                 The <strong>mission</strong> of the <a href="https://www.w3.org/dpub/WG/">Publishing Working Group</a> is to enable all publications—with all their specificities and traditions—to become first-class entities on the Web.
+                 The <strong>mission</strong> of the <a href="https://www.w3.org/publishing/groups/publ-wg/">Publishing Working Group</a> is to enable all Web Publications (see below)&thinsp;—&thinsp;with all their specificities and traditions&thinsp;—&thinsp;to become first-class entities on the Web.
                  The WG will provide the necessary technologies on the Open Web Platform to make the combination of traditional publishing and the Web complete in terms of accessibility, usability, portability, distribution, archiving, offline access, and reliable cross referencing.
             </p>
 
             <div class="noprint">
                 <p class="join">
-                    <a href="https://www.w3.org/2004/01/pp-impl/#####/join">Join the Publishing Working Group.</a> <span class="todo">[Final URL to be filled in if and when the charter is formally approved.]</span>
+                    <a href="https://www.w3.org/2004/01/pp-impl/100074/join">Join the Publishing Working Group.</a>
                 </p>
             </div>
 
@@ -136,7 +141,7 @@
                     <tbody>
                         <tr id="Start">
                             <th>Start date </th>
-                            <td>1 June, 2017</td>
+                            <td>12 June, 2017</td>
                         </tr>
                         <tr id="End">
                             <th>End date </th>
@@ -152,7 +157,9 @@
                         </tr>
                         <tr>
                             <th> Meeting Schedule </th>
-                            <td> <strong>Teleconferences:</strong> 1-hour calls will be held weekly <br> <strong>Face-to-face:</strong> We will meet during the W3C's annual Technical Plenary week; additional face-to-face meetings may be scheduled by consent of the participants, usually no more than 3 per year.</td>
+                            <td> <strong>Teleconferences:</strong> 1-hour calls will be held weekly. <br> <strong>Face-to-face:</strong> We will meet during the W3C's annual Technical Plenary week; additional face-to-face meetings may be scheduled by consent of the participants, usually no more than 3 per year. <br>
+                            (See also the <a href="#communication">section on communications</a> for further details.)
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -162,25 +169,19 @@
                 <h2>Goals</h2>
                 <p>
                     Publications, from magazine articles to product documentation, from electronic books to scholarly journal articles, are increasingly present on the Web.
-                    While following the traditions of the publishing world in terms of typesetting, layout, ergonomy, and usage patterns, the Web brings a new level of pervasive accessibility, internationalization, addressability, and interconnectedness to these publications.
+                    While following the traditions of the publishing world in terms of typesetting, layout, ergonomics, and usage patterns, the Web brings a new level of pervasive accessibility, internationalization, addressability, and interconnectedness to these publications.
                     However, the combination of traditional publishing and the Web is not yet perfect: the <a href="https://www.w3.org/TR/pwp-ucr/">“Web Publications Use Cases and Requirements”</a> document, published by the <a href="https://www.w3.org/dpub/IG/">Digital Publishing Interest Group</a>, lists a number of use cases and requirements for publications on the Web.
-                    It will be the task of the Working Group to identify those requirements that are not yet fully covered by the current environments based on the Open Web Platform, and would therefore need further work, while re-using existing technologies developed by other Working Groups as much as possible and practical.
                 </p>
 
                 <p>
                     It is the goal of the Publishing Working Group to provide, in concert with other W3C Groups as outlined in <a href="#w3c-coordination">Section&nbsp;4.1</a>, the necessary technologies on the Open Web Platform to make the combination of traditional publishing and the Web complete in terms of the readers’ needs, portability, distribution, archiving, offline access, or reliable cross referencing.
-                    In short, <em>all publications—with all their specificities and traditions—should become first-class entities on the Web</em>.
+                    In short, <em>all publications—with all their specificities and traditions—should become first-class entities on the Web</em>, as Web Publications.
                 </p>
-            </section>
-
-            <section id="scope" class="scope">
-                <h2>Scope</h2>
                 <p>
-                    For the purpose of this document, a Web Publication (WP) is a collection of one or more constituent resources, organized together in a uniquely identifiable grouping that may be presented using standard Open Web Platform technologies.
-                    A Web Publication is not just a collection of links. The act of publishing involves obtaining resources and organizing them into a publication, which must be “manifested” by having files on a Web server.
-                    Thus the publisher provides an <a href="https://tools.ietf.org/html/rfc6454">origin</a> for the WP, and a URL that can uniquely identify that <a href="https://archive.ifla.org/VII/s13/frbr/frbr1.htm#3.2">(FRBR) manifestation</a>.
-                    A Web Publication must provide a number of features whose detailed specification is in the scope of this Working Group.
-                    While some of the detailed requirements have already been <a href="https://www.w3.org/TR/pwp-ucr/">documented elsewhere</a>, the most important and high-level characteristics that must be translated into specifications are:
+                    A <strong>Web Publication (WP)</strong> is a collection of one or more constituent resources, organized together in a uniquely identifiable grouping that may be presented using standard Open Web Platform technologies.
+                    The act of publishing involves obtaining resources and organizing them into a publication, which must be “manifested” by having files on a Web server.
+                    Thus the publisher provides an <a href="https://tools.ietf.org/html/rfc6454">origin</a> for the WP, and a URL that can uniquely identify that <a href="https://archive.ifla.org/VII/s13/frbr/frbr1.htm#3.2">(<abbr title="Functional Requirements for Bibliographic Records">FRBR</abbr>)</a> manifestation.
+                    The detailed requirements have already been <a href="https://www.w3.org/TR/pwp-ucr/">documented elsewhere</a>, the most important and high-level characteristics that must be translated into specifications are:
                 </p>
                 <ul>
                     <li>
@@ -213,98 +214,33 @@
                         </ul>
                     </li>
                 </ul>
-
                 <p>
-                    Recommendation-track deliverables will contain mechanisms to make Web Publications accessible to a broad range of readers with different needs and capabilities.
-                    This includes general WCAG and WAI requirements of the W3C as well as requirements for international readers using different scripts and document formats.
-                    Additional extended requirements will be identified as conformance requirements in the Working Group’s normative specifications, which will serve as a reference for content producers and for incorporation of publishing requirements in W3C standards like WCAG.
-                    Profiles of Web Publications may be defined with more stringent accessibility requirements.
-                </p>
-
-                <p>
-                    <a href="https://www.w3.org/Submission/2017/SUBM-epub31-20170125/">EPUB</a> has become one of the fundamental technologies for the global publishing ecosystem (see the <a href="https://w3c.github.io/pub-bg/docs/EPUB4_business_case.html">separate document</a>, published by the <a href="https://www.w3.org/community/publishingbg/">W3C Publishing Business Group</a>, for more details and background).
+                    <strong><a href="https://www.w3.org/Submission/2017/SUBM-epub31-20170125/">EPUB</a></strong> has become one of the fundamental technologies for the global publishing ecosystem (see the <a href="https://w3c.github.io/publ-bg/docs/EPUB4_business_case.html">separate document</a>, published by the <a href="https://www.w3.org/community/publishingbg/">W3C Publishing Business Group</a>, for more details and background).
                     It is the preferred format for a broad range of types of publications, not only for distribution but increasingly also for authoring and production workflows.
                     As part of the work on Web Publications, described in this charter, it is essential that a next generation of EPUB, currently referred to as EPUB&nbsp;4, retain the specificity, portability, predictability, accessibility, and internationalization required by the publishing ecosystem while benefitting from the improved features and functionalities offered by Packaged Web Publications.
                     EPUB&nbsp;4 should not be in conflict with Web Publications; it should be a type of Web Publication that provides the predictability and interoperability that this ecosystem has come to rely on.
                 </p>
 
-                <section id="input-documents">
-                    <h3>Input Documents</h3>
+            </section>
 
-                    <p>
-                        The following documents <i>may</i> be considered by the Working Group as inputs to the specifications to be developed.
-                    </p>
+            <section id="scope" class="scope">
+                <h2>Scope</h2>
+                <p>
+                    The WG will specify Web Publications and identify what they need the underlying Web platform to provide.
+                    It will build upon existing platform technologies specified by other groups, where available, seeking to fill gaps by assuring that the unique requirements of Web Publications are addressed by features (including optional features) or extension points in those specifications.
+                </p>
 
-                    <h4>W3C documents</h4>
+                <p>
+                    In particular, the WG will make normative Recommendations for Web Publications; Packaged Web Publications; EPUB 4; and DPUB-ARIA 2.0, as described in <a href="#deliverables">Deliverables</a> below.
+                </p>
 
-                        <h5>Recommendations or Recommendation track documents</h5>
-                        <ul>
-                            <li><a href="https://www.w3.org/TR/html/">HTML 5.1</a>. As a fundamental format for content on the Web, the features of HTML may influence some of the details for the definition of Web Publications. (Note that the link refers to the latest standard version of HTML. At present this is HTML&nbsp;5.1, but may change during the lifetime of the Working Group.)</li>
+                <p>
+                    Recommendation-track deliverables will contain mechanisms to make Web Publications accessible to a broad range of readers with different needs and capabilities.
+                    This includes general Web Content Accessibility Guidelines (WCAG) and Web Accessiblity Initiative (WAI) requirements of the W3C as well as requirements for international readers using different scripts and document formats.
+                    Profiles of Web Publications may be defined with more stringent accessibility requirements.
+                </p>
 
-                            <li><a href="https://www.w3.org/TR/SVG/">SVG 1.1</a>. As a fundamental format for the graphical content on the Web, the features of SVG may influence some of the details for the definition of Web Publications. (Note that the link refers to the latest standard version of SVG. At present this is SVG&nbsp;1.1, but may change during the lifetime of the Working Group.)</li>
-
-                            <li><a href="https://www.w3.org/TR/CSS/">CSS Snapshot 2017</a>. As a fundamental format for formatting the content on the Web, the features of CSS may influence some of the details for the definition of Web Publications. (Note that the link refers to the a document that lists the CSS modules that form CSS. At present this is for 2017, but may change during the lifetime of the Working Group.)</li>
-
-                            <li><a href="https://www.w3.org/TR/wai-aria-1.1/">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a>.
-                            ARIA&nbsp;1.1 provides the basis for the work on DPUB ARIA Module&nbsp;2.0.</li>
-
-                            <li><a href="http://www.w3.org/TR/dpub-aria-1.0/">Digital Publishing WAI-ARIA Module&nbsp;1.0</a>.
-                            The planned DPUB ARIA Module&nbsp;2.0 is planned to be an extension to this specification.</li>
-
-                            <li><a href="https://www.w3.org/TR/appmanifest/">Web App Manifest</a>.
-                            The definition of Web Publications may rely on the introduction of a manifest and, if so, a compatibility with, and/or linkage to, Web App Manifests should be considered.
-                            (Note that Web App Manifests are <em>distinct</em> from the now-defunct effort on Cache Manifests.)</li>
-
-                            <li><a href="https://w3c.github.io/ServiceWorker/">Service Workers</a>.
-                            Service Workers may provide an implementation vehicle for some aspects of Web Publications in a browser context.
-                            In particular, Service Workers offer facilities for an offline access to documents published on the Web.</li>
-
-                            <li><a href="https://w3ctag.github.io/packaging-on-the-web/">Packaging on the Web</a>.
-                            The definition of packaging for Packaged Web Publications should consider this format as (one of) its standard format(s).</li>
-
-                            <li><a href="https://www.w3.org/TR/odrl-model/">ODRL Information Model</a> and <a href="https://www.w3.org/TR/odrl-vocab/">ODRL Vocabulary &amp; Expression</a>.
-                            Publishers may need to attach their licenses to the assets within a publication.
-                            The ODRL vocabulary should be considered as a possible way of expressing those licenses.</li>
-                        </ul>
-
-                        <h5>Other Documents (Notes, Member Submissions, Working Drafts for Notes, etc.)</h5>
-                        <ul>
-                            <li><a href="https://www.w3.org/TR/pwp/">Web Publications for the Open Web Platform: Vision And Technical Challenges</a>.
-                            This document summarizes the technical deliberations on the subject by the DPUB Interest Group.</li>
-
-                            <li><a href="https://www.w3.org/TR/pwp-ucr/">Web Publications Use Case and Requirements</a>.
-                            This is a collection of use cases collected by the DPUB Interest Group showing the requirements for Web Publications and Packaged Web Publications.</li>
-
-                            <li><a href="https://www.w3.org/TR/2016/NOTE-dpub-accessibility-20160503/">Digital Publishing and Accessibility in W3C Documents</a>.
-                            This Interest Group Note collects a number of accessibility features that are relevant for the publishing community and not (yet) part of the W3C Web Content Accessibility Guidelines.
-                            These document provides a basis for the working aiming at the extension of future versions of WCAG regarding publishing.</li>
-
-                            <li><a href="https://www.w3.org/Submission/2017/SUBM-epub31-20170125/">EPUB 3.1</a>.
-                            The Member Submission of EPUB&nbsp;3 will be an important input into Web Publications, Portable Web Publications, and EPUB&nbsp;4.
-                            Compatibility with EPUB&nbsp;3 will be a consideration in development of all three specifications.
-                            (Note that this reference is to an “umbrella” document for a <a href="https://www.w3.org/Submission/2017/SUBM-epub31-20170125/#sec-epub-specs">suite of six specifications</a>.) </li>
-
-                            <li><a href="http://w3c.github.io/dpub-pagination/">Requirements for Latin Text Layout and Pagination</a>.
-                            This document has been worked on by the <a href="https://www.w3.org/dpub/IG/">Digital Publishing Interest Group</a> (whose charter expires in October 2017).
-                            The Working Group will  continue this work and plans to publish a Working Group Note.
-                            </li>
-                        </ul>
-
-                    <h4>Non-W3C documents</h4>
-                    <ul>
-                        <li><a href="http://www.idpf.org/epub/profiles/edu/spec/">EPUB for Education</a>.
-                        This profile of EPUB&nbsp;3 gives a good example for the type of profiles that the publishing community uses.</li>
-
-                        <li><a href="https://idpf.github.io/epub-vocabs/structure/">EPUB&nbsp;3 Structural Semantics</a>.
-                        This document will form the basis for the work on DPUB-ARIA Module&nbsp;2.0.</li>
-
-                        <li><a href="https://github.com/readium/webpub-manifest">Readium Web Publication Manifest</a>.
-                        First draft of a Web Publication manifest format, provided by the <a href="http://readium.org/">Readium Consortium</a>.</li>
-
-                    </ul>
-                </section>
-
-                <section id="section-out-of-scope">
+                <section>
                     <h3 id="out-of-scope">Out of Scope</h3>
                     <p>
                         The following features are out of scope, and will not be addressed by this Working group.
@@ -324,7 +260,7 @@
                         </li>
 
                         <li>
-                            Maintenance of EPUB&nbsp;3 (done in the separate <a href="https://www.w3.org/community/epub3/">EPUB&nbsp;3 Community Group</a>).
+                            Maintenance of EPUB&nbsp;3 (and previous versions of EPUB) (done in the separate <a href="https://www.w3.org/community/epub3/">EPUB&nbsp;3 Community Group</a>).
                         </li>
                     </ul>
                 </section>
@@ -351,9 +287,13 @@
 
             <section id="deliverables">
                 <h2> Deliverables </h2>
-                <p>More detailed milestones and updated publication schedules are available on the <a href="@@@@@">group publication status page</a>.</p>
+                <p>
+                    More detailed milestones and updated publication schedules are available on the <a href="https://www.w3.org/publishing/groups/publ-wg/PublStatus">group publication status page</a>.
+                </p>
 
-                <p>To facilitate timely progress on the Recommendation track and for the sake of maintainability the Working group may, based on consensus in the Working Group, split or merge its deliverables.</p>
+                <p>
+                    To facilitate timely progress on the Recommendation track and for the sake of maintainability the Working Group may, based on consensus in the Working Group, split or merge its deliverables.
+                </p>
 
                 <section id="normative">
                     <h3>Recommendation-track Deliverables</h3>
@@ -410,7 +350,7 @@
                             </p>
 
                             <p>
-                                This deliverable draws upon a <a href="http://w3c.github.io/dpub-pagination/">previous version of this document</a>, published by the Digital Publishing Interest Group.
+                                This deliverable draws upon a <a href="http://w3c.github.io/dpub-pagination/">previous version of this document</a>, published by the <a href="https://www.w3.org/dpub/IG/">Digital Publishing Interest Group</a>.
                             </p>
                         </dd>
 
@@ -429,7 +369,7 @@
                 <section id="timeline">
                     <h3>Milestones</h3>
                     <p>
-                        The group’s <a href="https://www.w3.org/dpub/WG/PubStatus">Publication Status</a> document provides current data about all of the group’s specifications. <span class="todo">[Final URI to be set up if the charter is formally accepted.]</span>
+                        The group’s <a href="https://www.w3.org/publishing/groups/publ-wg/PublStatus">Publication Status</a> document provides current data about all of the group’s specifications.
                         Although the group expects all of its active deliverables to progress during this charter period, the charter does not include detailed milestone data for each specification because such data is speculative and easily becomes out of date.
                         The Working Group does expect the following to occur:
                     </p>
@@ -468,7 +408,9 @@
 
                     <figure aria-describedby="#milestone_list">
                         <img src="figures/timeline.svg" style="width:90%" alt="The timeline of the deliverables">
-                        <figcaption>Major milestones (figure also available as a <a href="figures/timeline.png">PNG image</a>)</figcaption>
+                        <figcaption>
+                            Major milestones (figure also available as a <a href="figures/timeline.png">PNG image</a>)
+                        </figcaption>
                     </figure>
 
                 </section>
@@ -571,13 +513,103 @@
                         </dd>
                     </dl>
                 </section>
+
+
+               <section id="input-documents">
+                    <h3>Input Documents</h3>
+                    <p>
+                        The following documents will be considered by the Working Group as inputs to the specifications to be developed.
+                        The Working Group will identify requirements that are not yet fully covered by the current environments based on the Open Web Platform, that therefore need further work, while re-using existing technologies developed by other Working Groups to the extent possible.
+                        The Working Group should not reinvent technologies that have been, or are being developed elsewhere in W3C Working Groups, and should seek instead further cooperation with the relevant groups.
+                    </p>
+
+                    <ul>
+                        <li>
+                            <a href="https://www.w3.org/TR/appmanifest/">Web App Manifest</a>.
+                            The definition of Web Publications may rely on the introduction of a manifest and, if so, a compatibility with, and/or linkage to, Web App Manifests should be considered.
+                            (Note that Web App Manifests are <em>distinct</em> from the now-defunct effort on Cache Manifests.)
+                        </li>
+
+                        <li>
+                            <a href="https://w3c.github.io/ServiceWorker/">Service Workers</a>.
+                            Service Workers may provide an implementation vehicle for some aspects of Web Publications in a browser context.
+                            In particular, Service Workers offer facilities for an offline access to documents published on the Web.
+                        </li>
+
+                        <li>
+                            <a href="https://w3ctag.github.io/packaging-on-the-web/">Packaging on the Web</a>.
+                            The definition of packaging for Packaged Web Publications should consider this format as (one of) its standard format(s).
+                        </li>
+
+                        <li>
+                            <a href="http://www.w3.org/TR/dpub-aria-1.0/">Digital Publishing WAI-ARIA Module&nbsp;1.0</a>.
+                            The planned DPUB ARIA Module&nbsp;2.0 is planned to be an extension to this specification.
+                        </li>
+
+                        <li>
+                            <a href="https://idpf.github.io/epub-vocabs/structure/">EPUB&nbsp;3 Structural Semantics</a>.
+                            This document will form the basis for the work on DPUB-ARIA Module&nbsp;2.0.
+                        </li>
+                        <li>
+                            The WG expects to rely on other relevant Recommendations including <a href="https://www.w3.org/TR/html/">HTML</a>, <a href="https://www.w3.org/TR/SVG/">SVG 1.1</a>, <a href="https://www.w3.org/TR/CSS/">CSS</a>, <a href="https://www.w3.org/TR/wai-aria-1.1/">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a>, <a href="https://www.w3.org/TR/odrl-model/">ODRL Information Model</a>, and <a href="https://www.w3.org/TR/odrl-vocab/">ODRL Vocabulary &amp; Expression</a>.
+                        </li>
+                    </ul>
+
+                    <p>
+                        The following documents provide inputs for non-normative work:
+                    </p>
+
+                    <ul>
+                        <li>
+                            <a href="https://www.w3.org/TR/2016/NOTE-dpub-accessibility-20160503/">Digital Publishing and Accessibility in W3C Documents</a>.
+                            This Interest Group Note has collected a number of accessibility features that are relevant for the publishing community and not (yet) part of the W3C Web Content Accessibility Guidelines.
+                            This document provides a basis for the working aiming at the extension of future versions of WCAG regarding publishing.
+                        </li>
+
+                        <li>
+                            <a href="http://w3c.github.io/dpub-pagination/">Requirements for Latin Text Layout and Pagination</a>.
+                            This document has been worked on by the <a href="https://www.w3.org/dpub/IG/">Digital Publishing Interest Group</a> (whose charter expires in October 2017).
+                            The Working Group will  continue this work and plans to publish a Working Group Note.
+                        </li>
+                    </ul>
+
+                    <p> References: </p>
+                     <ul>
+                        <li>
+                            <a href="https://www.w3.org/TR/pwp/">Web Publications for the Open Web Platform: Vision And Technical Challenges</a>.
+                            This document summarizes the technical deliberations on the subject by the DPUB Interest Group.
+                        </li>
+
+                        <li>
+                            <a href="https://www.w3.org/TR/pwp-ucr/">Web Publications Use Case and Requirements</a>.
+                            This is a collection of use cases collected by the DPUB Interest Group showing the requirements for Web Publications and Packaged Web Publications.
+                        </li>
+
+                        <li>
+                            <a href="https://www.w3.org/Submission/2017/SUBM-epub31-20170125/">EPUB 3.1</a>.
+                            The Member Submission of EPUB&nbsp;3 will be an important input into Web Publications, Portable Web Publications, and EPUB&nbsp;4.
+                            Compatibility with EPUB&nbsp;3 will be a consideration in the development of all three specifications.
+                            (Note that this reference is to an “umbrella” document for a <a href="https://www.w3.org/Submission/2017/SUBM-epub31-20170125/#sec-epub-specs">suite of six specifications</a>.)
+                        </li>
+
+                        <li>
+                            <a href="https://github.com/readium/webpub-manifest">Readium Web Publication Manifest</a>.
+                            First draft of a Web Publication manifest format, provided by the <a href="http://readium.org/">Readium Consortium</a>.
+                        </li>
+
+                        <li>
+                            <a href="http://www.idpf.org/epub/profiles/edu/spec/">EPUB for Education</a>.
+                            This profile of EPUB&nbsp;3 gives a good example for the type of profiles that the publishing community uses.
+                        </li>
+                    </ul>
+                </section>
             </section>
 
             <section class="participation">
                 <h2 id="participation">Participation</h2>
                 <p>
-                    To be successful, this Working Group is expected to have 6 or more active participants for its duration, including representatives from key implementors and users (e.g, publishers, authors) of this specification, and active Editors and Test Leads for each specification.
-                    The Chairs, specification Editors, and Test Leads are expected to contribute half of a day per week towards the Working Group.
+                    To be successful, this Working Group is expected to have 6 or more active participants for its duration, including representatives from key implementers and users (e.g., publishers, authors) of this specification, and active Editors and Test Leads for each specification.
+                    The Chairs, specification Editors, and Test Leads are expected to contribute 4 hours per week towards the Working Group.
                     There is no minimum requirement for other Participants.
                 </p>
 
@@ -587,6 +619,7 @@
 
                 <p>
                     The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>.
+                    Chairs and Team contacts may also contact these contributors to encourage them to join the Working Group to make their licensing commitment easier.
                 </p>
             </section>
 
@@ -599,7 +632,7 @@
                 </p>
 
                 <p>
-                    Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="https://www.w3.org/dpub/WG/">Publishing Working Group home page.</a> <span class="todo">[Final URL to be filled in if and when the charter is formally approved.]</span>
+                    Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a href="https://www.w3.org/publishing/groups/publ-wg/">Publishing Working Group home page.</a>
                 </p>
 
                 <p>
@@ -608,7 +641,12 @@
                 </p>
 
                 <p>
-                    This group primarily conducts its technical work on the public mailing list <a " id="public-email" href="mailto:public-pub-wg@w3.org">public-pub-wg@w3.org</a> (<a href="http://lists.w3.org/Archives/Public/public-pub-wg/">archive</a>) and on <a " id="public-github" href="https://github.com/w3c/pub-wg/issues">GitHub issues</a> <span class="todo">[email and github addresses filled in if and when the charter is formally approved.]</span>.
+                    This group primarily conducts its technical work on the public mailing list <a id="public-email" href="mailto:public-publ-wg@w3.org">public-publ-wg@w3.org</a> (<a href="http://lists.w3.org/Archives/Public/public-publ-wg/">archive</a>), and through GitHub repositories and issues.
+                    These, but also tools like IRC channels and possibly other communication technologies should make asynchronous work possible.
+                    The <a href='#decisions'>decision policy</a> adopted by the group is defined to allow this.
+                </p>
+
+                <p>
                     The public is invited to review, discuss and contribute to this work.
                 </p>
 
@@ -627,6 +665,12 @@
                 <p>
                     However, if a decision is necessary for timely progress, but consensus is not achieved after careful consideration of the range of views presented, the Chairs may call for a group vote, recording a decision along with any objections.
                 </p>
+
+                <!-- <p>
+                    To afford asynchronous decisions and organizational deliberation, any resolution (including publication decisions) taken in a face-to-face meeting or teleconference will be considered provisional until 5 working days after the publication of the resolution in draft minutes sent to the group's mailing list.
+                    Depending on the chairs’ evaluation of the group consensus on an issue a call for consensus (CfC) may be also issued as an addition to, or as a replacement for, a meeting resolution (for example, via email and/or web-based survey), with a response period from 5 to 10 working days.
+                    If no objections are raised on the mailing list by the end of the response period, the resolution will be considered to have obtained consensus as a resolution of the Working Group.
+                </p> -->
 
                 <p>
                     To afford asynchronous decisions and organizational deliberation, any resolution (including publication decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
@@ -678,29 +722,27 @@
                            <tr>
                                <th>Charter Period</th>
                                <th>Start Date</th>
-                               <th> End Date</th>
+                               <th>End Date</th>
                                <th>Changes</th>
                            </tr>
                            <tr>
-                               <th><a href="">Initial Charter</a></th>
-                               <td><i class="todo">[dd monthname yyyy] Expected</i></td>
-                               <td><i class="todo">[dd monthname yyyy] Expected</i></td>
+                               <th>Initial Charter</th>
+                               <td>12 June 2017</td>
+                               <td>1 July 2020</i></td>
                                <td>–</td>
                            </tr>
                        </tbody>
                     </table>
                  </section> -->
             </section>
-
         </main>
-
         <hr>
-
         <footer>
-            <address><a href="https://www.w3.org/community/publishingbg/">Publishing BG</a> &amp; <a href="https://www.w3.org/dpub/IG/">DPUB IG</a>; ed:&nbsp;<a href="mailto:ivan@w3.org">Ivan Herman</a></address>
+            <address><a href="https://www.w3.org/publishing/groups/publ-bg/">Publishing BG</a> &amp; <a href="https://www.w3.org/dpub/IG/">DPUB IG</a>; ed:&nbsp;<a href="mailto:ivan@w3.org">Ivan Herman</a></address>
             <p class="copyright">
                 <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2017&nbsp; <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> ( <a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a> ), All Rights Reserved. <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.
             </p>
+            <p>$Id: index.html,v 1.7 2017/06/07 14:09:07 ivan Exp $</p>
         </footer>
     </body>
 </html>
